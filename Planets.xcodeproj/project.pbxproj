@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4160860F17C6E67E1EC8357E /* Pods_Planets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5411D23BE56F3CD19CCFFAFD /* Pods_Planets.framework */; };
 		9D0B030B23507611007F91E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B030A23507611007F91E7 /* AppDelegate.swift */; };
 		9D0B030D23507611007F91E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B030C23507611007F91E7 /* SceneDelegate.swift */; };
 		9D0B030F23507611007F91E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B030E23507611007F91E7 /* ViewController.swift */; };
 		9D0B031223507611007F91E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0B031023507611007F91E7 /* Main.storyboard */; };
 		9D0B031423507612007F91E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0B031323507612007F91E7 /* Assets.xcassets */; };
 		9D0B031723507612007F91E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0B031523507612007F91E7 /* LaunchScreen.storyboard */; };
+		9D952F2E23544E4D00FD82F9 /* PlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D952F2D23544E4D00FD82F9 /* PlanetCell.swift */; };
+		9D952F3023544FDE00FD82F9 /* AddPlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D952F2F23544FDE00FD82F9 /* AddPlanetViewController.swift */; };
+		9DC2F310235367730085D94C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DC2F30F235367730085D94C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19AE7EE52FDDB9168C1DFD8A /* Pods-Planets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planets.debug.xcconfig"; path = "Target Support Files/Pods-Planets/Pods-Planets.debug.xcconfig"; sourceTree = "<group>"; };
+		1CE5A5D127998099E1DF8367 /* Pods-Planets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planets.release.xcconfig"; path = "Target Support Files/Pods-Planets/Pods-Planets.release.xcconfig"; sourceTree = "<group>"; };
+		5411D23BE56F3CD19CCFFAFD /* Pods_Planets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0B030723507611007F91E7 /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0B030A23507611007F91E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D0B030C23507611007F91E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		9D0B031323507612007F91E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D0B031623507612007F91E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D0B031823507612007F91E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D952F2D23544E4D00FD82F9 /* PlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCell.swift; sourceTree = "<group>"; };
+		9D952F2F23544FDE00FD82F9 /* AddPlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanetViewController.swift; sourceTree = "<group>"; };
+		9DC2F30F235367730085D94C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4160860F17C6E67E1EC8357E /* Pods_Planets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7481789F82BF60888E2DB5C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19AE7EE52FDDB9168C1DFD8A /* Pods-Planets.debug.xcconfig */,
+				1CE5A5D127998099E1DF8367 /* Pods-Planets.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D60CB1D4AFE85D5E6818777 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5411D23BE56F3CD19CCFFAFD /* Pods_Planets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D0B02FE23507611007F91E7 = {
 			isa = PBXGroup;
 			children = (
 				9D0B030923507611007F91E7 /* Planets */,
 				9D0B030823507611007F91E7 /* Products */,
+				7481789F82BF60888E2DB5C0 /* Pods */,
+				8D60CB1D4AFE85D5E6818777 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +88,10 @@
 			children = (
 				9D0B030A23507611007F91E7 /* AppDelegate.swift */,
 				9D0B030C23507611007F91E7 /* SceneDelegate.swift */,
+				9DC2F30F235367730085D94C /* GoogleService-Info.plist */,
 				9D0B030E23507611007F91E7 /* ViewController.swift */,
+				9D952F2F23544FDE00FD82F9 /* AddPlanetViewController.swift */,
+				9D952F2D23544E4D00FD82F9 /* PlanetCell.swift */,
 				9D0B031023507611007F91E7 /* Main.storyboard */,
 				9D0B031323507612007F91E7 /* Assets.xcassets */,
 				9D0B031523507612007F91E7 /* LaunchScreen.storyboard */,
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D0B031B23507612007F91E7 /* Build configuration list for PBXNativeTarget "Planets" */;
 			buildPhases = (
+				ABDCC9AF419C2E7CBD7B69D6 /* [CP] Check Pods Manifest.lock */,
 				9D0B030323507611007F91E7 /* Sources */,
 				9D0B030423507611007F91E7 /* Frameworks */,
 				9D0B030523507611007F91E7 /* Resources */,
+				C56DEB9A8FE4D9A3F416B54C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +161,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D0B031723507612007F91E7 /* LaunchScreen.storyboard in Resources */,
+				9DC2F310235367730085D94C /* GoogleService-Info.plist in Resources */,
 				9D0B031423507612007F91E7 /* Assets.xcassets in Resources */,
 				9D0B031223507611007F91E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABDCC9AF419C2E7CBD7B69D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Planets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56DEB9A8FE4D9A3F416B54C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Planets/Pods-Planets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Planets/Pods-Planets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Planets/Pods-Planets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D0B030323507611007F91E7 /* Sources */ = {
@@ -141,6 +219,8 @@
 				9D0B030F23507611007F91E7 /* ViewController.swift in Sources */,
 				9D0B030B23507611007F91E7 /* AppDelegate.swift in Sources */,
 				9D0B030D23507611007F91E7 /* SceneDelegate.swift in Sources */,
+				9D952F2E23544E4D00FD82F9 /* PlanetCell.swift in Sources */,
+				9D952F3023544FDE00FD82F9 /* AddPlanetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +362,7 @@
 		};
 		9D0B031C23507612007F91E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19AE7EE52FDDB9168C1DFD8A /* Pods-Planets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +372,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.softhion.Planets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egesucu.Planets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +381,7 @@
 		};
 		9D0B031D23507612007F91E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE5A5D127998099E1DF8367 /* Pods-Planets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,7 +391,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.softhion.Planets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egesucu.Planets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>38760813801-4dpdur0dkio4nh3a8i5fnbvv83jvmn82.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.38760813801-4dpdur0dkio4nh3a8i5fnbvv83jvmn82</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCf5AA3kQ1zaYKxL_aEQR7UdqJo2LRUrPw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>38760813801</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.egesucu.Planets</string>
+	<key>PROJECT_ID</key>
+	<string>planets-bc556</string>
+	<key>STORAGE_BUCKET</key>
+	<string>planets-bc556.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:38760813801:ios:7d89b84b0852962fc68c78</string>
+	<key>DATABASE_URL</key>
+	<string>https://planets-bc556.firebaseio.com</string>
+</dict>
+</plist>
